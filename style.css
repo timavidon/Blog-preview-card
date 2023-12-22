@@ -1,8 +1,9 @@
 @font-face {
   font-family: "Figtree";
+  font-display: swap;
   font-weight: 100 900;
-  src: url(./assets/fonts/Figtree-VariableFont_wght.ttf),
-    url(./assets/fonts/Figtree-Italic-VariableFont_wght.ttf);
+  src: url(./assets/fonts/Figtree-VariableFont_wght.ttf) format("truetype"),
+    url(./assets/fonts/Figtree-Italic-VariableFont_wght.ttf) format("truetype");
 }
 
 :root {
@@ -71,6 +72,7 @@ body {
 }
 
 .card__image {
+  object-fit: cover;
   border-radius: 0.8rem;
   margin-bottom: 1.5rem;
 }
