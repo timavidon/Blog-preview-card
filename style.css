@@ -1,0 +1,141 @@
+@font-face {
+  font-family: "Figtree";
+  font-weight: 100 900;
+  src: url(./assets/fonts/Figtree-VariableFont_wght.ttf),
+    url(./assets/fonts/Figtree-Italic-VariableFont_wght.ttf);
+}
+
+:root {
+  /* Colors */
+  --clr-primary-hsl: 47, 88%, 63%;
+  --clr-primary: hsl(47, 88%, 63%);
+
+  --clr-neutral-100-hsl: 0, 0%, 100%;
+  --clr-neutral-600-hsl: 0, 0%, 50%;
+  --clr-neutral-800-hsl: 0, 0%, 7%;
+
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-600: hsl(0, 0%, 50%);
+  --clr-neutral-800: hsl(0, 0%, 7%);
+
+  /* Font families */
+  --ff-primary: "Figtree";
+
+  /* Font weights */
+  --fw-regular: 400;
+  --fw-semi-bold: 600;
+  --fw-extra-bold: 800;
+
+  /* Font sizes */
+  --fs-300: 0.875rem;
+  --fs-400: 1rem;
+}
+
+/* CSS resets */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img,
+svg,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Main style */
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100dvh;
+  font-family: var(--ff-primary);
+  padding: 1.6rem;
+  background-color: var(--clr-primary);
+}
+
+.card {
+  max-width: 385px;
+  padding: 1.4rem;
+  border-radius: 1.3rem;
+  border: 1.5px solid var(--clr-neutral-800);
+  background-color: var(--clr-neutral-100);
+  box-shadow: 8px 8px 0px 0px var(--clr-neutral-800);
+}
+
+.card__image {
+  border-radius: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.card__tag {
+  max-width: min-content;
+  font-size: var(--fs-300);
+  font-weight: var(--fw-extra-bold);
+  padding: 0.4rem 0.8rem;
+  margin-bottom: 0.8rem;
+  border-radius: 0.3rem;
+  background-color: var(--clr-primary);
+}
+
+.card__date {
+  font-size: var(--fs-300);
+  font-weight: var(--fw-semi-bold);
+}
+
+.card__heading {
+  margin-block: 1.1rem;
+}
+
+.card__heading a {
+  font-weight: var(--fw-extra-bold);
+  color: var(--clr-neutral-800);
+}
+
+.card__heading a:hover {
+  color: var(--clr-primary);
+}
+
+.card__desc {
+  line-height: 1.5;
+  font-weight: var(--fw-regular);
+  color: var(--clr-neutral-600);
+  margin-bottom: 1.4rem;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 0.77rem;
+}
+
+.user__pfp {
+  width: 2rem;
+  height: 2rem;
+}
+
+.user__name {
+  font-size: var(--fs-300);
+  font-weight: var(--fw-extra-bold);
+}
+
+.attribution {
+  text-align: center;
+  padding-block: 1rem;
+}
+
+.attribution a {
+  font-weight: var(--fw-extra-bold);
+  color: var(--clr-neutral-800);
+}
+
+.attribution a:hover {
+  color: var(--clr-neutral-600);
+}
