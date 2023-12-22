@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github](https://your-solution-url.com)
-- Live Site URL: [Live site](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/timavidon/Blog-preview-card)
+- Live Site URL: [Live site](https://timavidon.github.io/Blog-preview-card/)
 
 ## My process
 
